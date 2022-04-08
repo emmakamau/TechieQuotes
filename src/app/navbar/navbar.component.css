@@ -1,0 +1,13 @@
+.nav-bar-main{
+    background-color: #06113C !important;
+}
+
+.navbar{
+    padding: 0 !important;
+}
+
+.nav-item{
+    padding: 1vh 2vh !important;
+    background-color: #06113C !important;
+    border: none;
+}
