@@ -23,6 +23,14 @@ export class QuoteComponent implements OnInit {
       this.quotes[index].showDescription = !this.quotes[index].showDescription;
     }
 
+    //Add a new quote
+    addNewQuote(quote){
+      let quoteLen = this.quotes.length;
+      quote.id = quoteLen+1;
+      quote.entryDate = new Date()
+      this.quotes.push(quote)
+    }
+
     //Deletes the quote
     deleteQuote(isComplete, index){
       if (isComplete) {
