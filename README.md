@@ -17,7 +17,7 @@ Emmaculate Kamau
 
 ### Requirements
 
-NodeJs and Angular installed or an IDE with the same specifications.
+NodeJs and Angular installed or an IDE with the same functionality. VS Code is a great choice.
 
 ### Setup and instruction
 
@@ -32,17 +32,21 @@ BDD focuses on how the user will interact with the application.
 
 What you will see and experience:
 
-1. Landing page with several quotes on sticky notes tilted for effects. Note.
-2. Hover or focus on the note to remove the tilting effect to read effectively.
+1. Landing page with several quotes on sticky notes tilted for effects.
+2. Hover or focus on the note to remove the tilting effect; read effectively.<br>
     Note - Quote, Author, Thumbs up and Thumbs down are displayed.
-3. Click on the Thumbs up to up vote and Tumbs down to down vote. This increments the value adjascent.
+3. Click on the **Thumbs up** to up vote and **Thumbs down** to down vote.<br> 
+    This increments the value adjascent.
 4. Click on View more to display:
     - Uploaded By - name of the person who uploaded the quote.
-    - Tag - Either Humor me or Inspire and Motivate
-    - Delete button - Removes the Quote from display
+    - Tag - Either Humor me or Inspire and Motivate.
+    - Delete button - Removes the Quote from display.
 
-5. At the bottom is an add quote form. Enter your name, Author, Quote and Tag to create a new quote on submit.
-6. Finally is a footer with contact information. Click on the link on the very bottom to interact with me on LinkedIn.  
+5. At the bottom is an add quote form.<br> 
+    Enter your name, Author, Quote and Tag to create a new quote on submit.
+6. Click on the Reload to Clear the form.
+7. Finally is a footer with contact information.<br> 
+    Click on the link on the very bottom to interact with me on [LinkedIn](https://www.linkedin.com/in/emmaculate-k-987353104/).  
 
 ## Development
 
@@ -57,7 +61,7 @@ To fix a bug or enhance an existing module, follow these steps:
 
 ## Known Bugs
 
-If you find a bug or would like to request a new function, reach out to the development team via KYTdevs@gmail.com
+If you find a bug or would like to request a new function, reach out to the development team via emmaculatewkamau@gmail.com or on [LinkedIn](https://www.linkedin.com/in/emmaculate-k-987353104/)
 
 
 [MIT](https://choosealicense.com/licenses/mit/)
