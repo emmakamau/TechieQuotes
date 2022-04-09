@@ -45,7 +45,8 @@ What you will see and experience:
     - How many days have passed since the quote was added.
 
 5. At the bottom is an add quote form.<br> 
-    Enter your name, Author, Quote and Tag to create a new quote on submit.
+    Enter your name, Author, Quote and Tag to create a new quote on submit.<br>
+    The form throws errors below the inputs for empty values and cannot submit an empty form.
 6. Click on the Reload to Clear the form.
 7. Finally is a footer with contact information.<br> 
     Click on the link on the very bottom to interact with me on [LinkedIn](https://www.linkedin.com/in/emmaculate-k-987353104/).  
