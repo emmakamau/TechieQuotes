@@ -14,7 +14,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     QuoteComponent,
     QuoteDetailComponent,
     QuoteFormComponent,
-    NavbarComponent
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
