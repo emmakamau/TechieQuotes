@@ -23,8 +23,8 @@ NodeJs and Angular installed or an IDE with the same functionality. VS Code is a
 
 1. Clone the repository [here](https://github.com/emmakamau/TechieQuotes.git).
 2. Extract and open the folder.
-3. Run **ng serve --open** from your prefered browser.
-4. Navigate to `http://localhost:4200/`.
+3. Run **ng serve --open** from the console.
+4. Navigate to `http://localhost:4200/` on your preferred browser.
 
 ## Behaviour Driven Development
 
@@ -37,6 +37,7 @@ What you will see and experience:
     Note - Quote, Author, Thumbs up and Thumbs down are displayed.
 3. Click on the **Thumbs up** to up vote and **Thumbs down** to down vote.<br> 
     This increments the value adjascent.
+    **NB** The quote with the most votes is highlighted in Orange.
 4. Click on View more to display:
     - Uploaded By - name of the person who uploaded the quote.
     - Tag - Either Humor me or Inspire and Motivate.
@@ -61,8 +62,9 @@ To fix a bug or enhance an existing module, follow these steps:
 
 ## Known Bugs
 
-If you find a bug or would like to request a new function, reach out to the development team via emmaculatewkamau@gmail.com or on [LinkedIn](https://www.linkedin.com/in/emmaculate-k-987353104/)
+If you find a bug or would like to request a new function, reach out to me via Email: emmaculatewkamau@gmail.com or on [LinkedIn](https://www.linkedin.com/in/emmaculate-k-987353104/)
 
+## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
