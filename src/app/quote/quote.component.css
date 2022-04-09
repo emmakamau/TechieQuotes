@@ -1,3 +1,10 @@
+.main-heading{
+    text-align: center;
+    margin:2vh 0;
+    font-family: 'Rubik Wet Paint', cursive;
+    opacity: 0.8;
+}
+
 .quote-display{
     padding: 0;
 }
@@ -13,16 +20,23 @@
     font-weight: bolder;
 }
 
-.main-heading{
-    text-align: center;
-    margin:2vh 0;
-    font-family: 'Rubik Wet Paint', cursive;
-    opacity: 0.8;
+.quote-vote-display{
+    width: 80%;
+    margin: 0 auto;
 }
 
 .quote-author{
     font-weight: bolder;
 }
+
+
+.quote-show{
+    font-family: 'Reenie Beanie';
+    font-size: 2rem;
+    line-height:90%;
+    padding: 1vh 2vh;
+  }
+
 
 .view-more{
     text-align: center;
@@ -64,19 +78,6 @@ ul li{
     transition: transform .15s linear;
 }
 
-ul li:hover,ul li:focus{
-    box-shadow:10px 10px 7px rgba(0,0,0,.7);
-    transform: scale(1.25);
-    position:relative;
-    z-index:5;
-  }
-
-.quote-show{
-    font-family: 'Reenie Beanie';
-    font-size: 2rem;
-    line-height:90%;
-  }
-
 ul li{
     margin:1em;
 }
@@ -100,6 +101,15 @@ ul li:nth-child(5n){
     position:relative;
     top:-10px;
 }
+
+
+.quote-display ul li:hover,.quote-display ul li:focus{
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    transform: scale(1.20);
+    position:relative;
+    z-index:5;
+  }
+
 
 /* Media queries */
 

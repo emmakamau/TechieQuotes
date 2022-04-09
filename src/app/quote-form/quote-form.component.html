@@ -2,50 +2,56 @@
 <div class="add-quote-form">
     <h3 class="form-heading">Add Quote</h3>
     <form #quoteForm='ngForm' (ngSubmit)='submitQuote(quoteForm)'>
-        <div class="row">
-            <div class="col-2"><label for="upLoadedBy" class="form-labels">Name</label></div>
-            <div class="col-10">
-                <input type="text" class="form-control" id="upLoadedBy" [(ngModel)]="newQuote.uploadedBy"
-                    name="upLoadedBy" #name='ngModel' placeholder="Enter your name">
-                <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-                    <p>Name is required</p>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-2"><label for="upLoadedBy" class="form-labels">Name</label></div>
+                <div class="col-10">
+                    <input type="text" class="form-control" id="upLoadedBy" [(ngModel)]="newQuote.uploadedBy"
+                        name="upLoadedBy" #name='ngModel' placeholder="Enter your name" required>
+                    <div [hidden]="name.valid || name.pristine" class="form-alert-danger">
+                        <p>Name is required</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-2"><label for="author" class="form-labels">Author</label></div>
-            <div class="col-10">
-                <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author"
-                    #author="ngModel" placeholder="Author of the quote">
-                <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
-                    <p>Author's name is required</p>
+            <div class="row">
+                <div class="col-2"><label for="author" class="form-labels">Author</label></div>
+                <div class="col-10">
+                    <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author"
+                        #author="ngModel" placeholder="Author of the quote" required>
+                    <div [hidden]="author.valid || author.pristine" class="form-alert-danger">
+                        <p>Author's name is required</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-2"><label for="quote" class="form-labels">Quote</label></div>
-            <div class="col-10">
-                <textarea type="text" class="form-control" rows="5" id="quote" [(ngModel)]="newQuote.quote" name="quote" #quote="ngModel" placeholder="Enter a quote"></textarea>
-                <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
-                    <p>Quote cannot be empty</p>
+            <div class="row">
+                <div class="col-2"><label for="quote" class="form-labels">Quote</label></div>
+                <div class="col-10">
+                    <textarea type="text" class="form-control" rows="5" id="quote" [(ngModel)]="newQuote.quote"
+                        name="quote" #quote="ngModel" placeholder="Enter a quote" required></textarea>
+                    <div [hidden]="quote.valid || quote.pristine" class="form-alert-danger">
+                        <p>Quote cannot be empty</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row quote-tag-form">
-            <div class="form-check col">
-                <input class="form-check-input" type="radio" name="quote-tag" id="inspire" value="Inspire & Motivate"
-                    [(ngModel)]="newQuote.tag">
-                <label class="form-check-label" for="inspire" class="form-labels">Inspire & Motivate</label>
+            <div class="row quote-tag-form">
+                <div class="form-check col">
+                    <input class="form-check-input" type="radio" name="quote-tag" id="inspire"
+                        value="Inspire & Motivate" [(ngModel)]="newQuote.tag" #quotetag="ngModel" required>
+                    <label class="form-check-label" for="inspire" class="form-labels">Inspire & Motivate</label>
+                </div>
+                <div class="form-check col">
+                    <input class="form-check-input" type="radio" name="quote-tag" id="humor" value="Humor Me"
+                        [(ngModel)]="newQuote.tag" required>
+                    <label class="form-check-label" for="humor" class="form-labels">Humor Me</label>
+                </div>
+                <div [hidden]="quotetag.valid || quotetag.pristine" class="form-alert-danger">
+                    <p>Quote tag not selected</p>
+                </div>
             </div>
-            <div class="form-check col">
-                <input class="form-check-input" type="radio" name="quote-tag" id="humor" value="Humor Me"
-                    [(ngModel)]="newQuote.tag">
-                <label class="form-check-label" for="humor" class="form-labels">Humor Me</label>
+            <div class="text-center">
+                <button type="submit" class="btn form-btn">Submit</button>
+                <span type="" (click)="clearQuoteForm(quoteForm)" class="btn form-btn clear-form">Reload</span>
             </div>
-        </div>
-        <div class="text-center">
-            <button type="submit" class="btn form-btn">Submit</button>
-            <span type="" (click)="clearQuoteForm(quoteForm)" class="btn form-btn clear-form">Reload</span>
         </div>
     </form>
 </div>

@@ -11,8 +11,14 @@
     font-weight: bold;
 }
 
+.form-alert-danger{
+    color: red;
+    padding: 0.5vh;
+    font-weight: bold;
+}
+
 .add-quote-form{
-    width: 50%;
+    width: 60%;
     margin: 5vh auto;
     background-color: #DDDDDD;
     padding: 1vh;
@@ -43,7 +49,6 @@
     .add-quote-form{
         width: 80%;
     }
-
     .form-btn{
         width: auto;
     }
@@ -53,9 +58,6 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .add-quote-form{
-        width: 80%;
-    }
 
     .form-btn{
         width: auto;
