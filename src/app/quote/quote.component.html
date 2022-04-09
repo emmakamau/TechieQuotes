@@ -15,11 +15,11 @@
             <hr>
             <div class="row">
                 <div class="col">
-                    <img src="./assets/Images/social-icons/thumbs-up.png" class="quote-vote" id="upVote"> 
+                    <img src="./assets/Images/social-icons/thumbs-up.png" class="quote-vote" id="upVote" (click)="upVoteQuote(i)"> 
                     <span class="quote-vote-value">{{quote.upVote}}</span>
                 </div>
                 <div class="col">
-                    <img src="./assets/Images/social-icons/thumbs-down.png" class="quote-vote" id="downVote">
+                    <img src="./assets/Images/social-icons/thumbs-down.png" class="quote-vote" id="downVote" (click)="downVoteQuote(i)">
                     <span class="quote-vote-value">{{quote.downVote}}</span>
                 </div>
             </div>
