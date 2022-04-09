@@ -35,3 +35,29 @@
     background-color: #FF8C32;
     color: #06113C;
 }
+
+/* Media queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .add-quote-form{
+        width: 80%;
+    }
+
+    .form-btn{
+        width: auto;
+    }
+    
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .add-quote-form{
+        width: 80%;
+    }
+
+    .form-btn{
+        width: auto;
+    }
+}
