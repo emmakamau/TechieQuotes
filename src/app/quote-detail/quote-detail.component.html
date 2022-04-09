@@ -1,1 +1,7 @@
-<p>quote-detail works!</p>
+<div class="row">
+    <div class="col"><p class="quote-moreinfo">Uploaded by: {{quote.uploadedBy}}</p></div>
+    <div class="col"><p class="quote-moreinfo">Tag: {{quote.tag}}</p></div>
+</div>
+<div class="text-center">
+    <button (click)= 'quoteDelete(true)' class="btn quote-del-btn">Delete Goal</button>
+</div>

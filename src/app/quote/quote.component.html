@@ -5,7 +5,7 @@
 <div class="quote-display">
     <h1 class="main-heading">TechieQuotes</h1>
     <ul>
-        <li *ngFor="let quote of quotes">
+        <li *ngFor="let quote of quotes, let i = index">
             <p class="quote-show">
                 <span><img src="./assets/Images/social-icons/double-quote-serif-left-xl.png" class="double-quote"></span>
                     {{quote.quote}}
@@ -23,18 +23,15 @@
                     <span class="quote-vote-value">{{quote.downVote}}</span>
                 </div>
             </div>
-            <p class="view-more">View more</p>
+            <p class="view-more" (click)='toggleDetails(i)'>View more</p>
+            <div *ngIf='quote.showDescription'>
+                <app-quote-detail [quote]="quote" (isComplete)='deleteQuote($event,i)'></app-quote-detail> 
+            </div>
         </li>
     </ul>
 </div>
-
-<!-- Inspire & Motivate Quotes -->
-
-<!-- Humour Me Quotes -->
 
 <!-- Add Quote Form -->
 
 <!-- Footer -->
 
-<!-- <p class="quote-author">{{quote.author}}</p>
-            <p class="quote-uploadedBy">{{quote.uploadedBy}}</p> -->

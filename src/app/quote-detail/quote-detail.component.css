@@ -1,0 +1,9 @@
+.quote-moreinfo{
+    font-style: italic;
+}
+
+.quote-del-btn{
+    background-color: #FF8C32;
+    color: #EEEEEE;
+    font-weight: bolder;
+}
