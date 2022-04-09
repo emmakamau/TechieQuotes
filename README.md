@@ -36,12 +36,13 @@ What you will see and experience:
 2. Hover or focus on the note to remove the tilting effect; read effectively.<br>
     Note - Quote, Author, Thumbs up and Thumbs down are displayed.
 3. Click on the **Thumbs up** to up vote and **Thumbs down** to down vote.<br> 
-    This increments the value adjascent.
+    This increments the value adjascent.<br>
     **NB** The quote with the most votes is highlighted in Orange.
 4. Click on View more to display:
     - Uploaded By - name of the person who uploaded the quote.
     - Tag - Either Humor me or Inspire and Motivate.
     - Delete button - Removes the Quote from display.
+    - How many days have passed since the quote was added.
 
 5. At the bottom is an add quote form.<br> 
     Enter your name, Author, Quote and Tag to create a new quote on submit.
