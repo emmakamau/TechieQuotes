@@ -3,11 +3,27 @@
 
 <!-- Popular Quotes -->
 <div class="quote-display">
+    <h1 class="main-heading">TechieQuotes</h1>
     <ul>
         <li *ngFor="let quote of quotes">
-            <p class="quote-show">{{quote.quote}} <span>View more</span></p>
-            <!-- <p class="quote-author">{{quote.author}}</p>
-            <p class="quote-uploadedBy">{{quote.uploadedBy}}</p> -->
+            <p class="quote-show">
+                <span><img src="./assets/Images/social-icons/double-quote-serif-left-xl.png" class="double-quote"></span>
+                    {{quote.quote}}
+                <span><img src="./assets/Images/social-icons/double-quote-serif-right-xl.png" class="double-quote"></span>
+            </p>
+            <p class="quote-author">Author, {{quote.author}}</p>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <img src="./assets/Images/social-icons/thumbs-up.png" class="quote-vote" id="upVote"> 
+                    <span class="quote-vote-value">{{quote.upVote}}</span>
+                </div>
+                <div class="col">
+                    <img src="./assets/Images/social-icons/thumbs-down.png" class="quote-vote" id="downVote">
+                    <span class="quote-vote-value">{{quote.downVote}}</span>
+                </div>
+            </div>
+            <p class="view-more">View more</p>
         </li>
     </ul>
 </div>
@@ -19,3 +35,6 @@
 <!-- Add Quote Form -->
 
 <!-- Footer -->
+
+<!-- <p class="quote-author">{{quote.author}}</p>
+            <p class="quote-uploadedBy">{{quote.uploadedBy}}</p> -->
