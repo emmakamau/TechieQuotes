@@ -1,35 +1,40 @@
 <hr>
 <div class="add-quote-form">
-    <form action="">
+    <h3 class="form-heading">Add Quote</h3>
+    <form (ngSubmit)='submitQuote()' #goalForm='ngForm'>
         <div class="row">
-            <div class="col-2"><label for="upLoadedBy">Name</label></div>
+            <div class="col-2"><label for="upLoadedBy" class="form-labels">Name</label></div>
             <div class="col-10">
                 <input type="text" class="form-control" id="upLoadedBy" placeholder="Enter your name">
             </div>
         </div>
         <div class="row">
-            <div class="col-2"><label for="author">Author</label></div>
+            <div class="col-2"><label for="author" class="form-labels">Author</label></div>
             <div class="col-10">
                 <input type="text" class="form-control" id="author" placeholder="Author of the quote">
             </div>
         </div>
         <div class="row">
-            <div class="col-2"><label for="quote">Quote</label></div>
+            <div class="col-2"><label for="quote" class="form-labels">Quote</label></div>
             <div class="col-10">
-                <textarea type="text" class="form-control" id="quote" placeholder="Enter a quote"></textarea>
+                <textarea type="text" class="form-control" rows="5" id="quote" placeholder="Enter a quote"></textarea>
             </div>
         </div>
-        <div class="row">
+        <div class="row quote-tag-form">
             <div class="form-check col">
-                <input class="form-check-input" type="radio" name="inspire" id="inspire"
+                <input class="form-check-input" type="radio" name="quote-tag" id="inspire"
                     value="Inspire & Motivate">
-                <label class="form-check-label" for="inspire">Inspire & Motivate</label>
+                <label class="form-check-label" for="inspire" class="form-labels">Inspire & Motivate</label>
             </div>
             <div class="form-check col">
-                <input class="form-check-input" type="radio" name="humor" id="humor"
+                <input class="form-check-input" type="radio" name="quote-tag" id="humor"
                     value="Humor Me">
-                <label class="form-check-label" for="humor">Humor Me</label>
+                <label class="form-check-label" for="humor" class="form-labels">Humor Me</label>
             </div>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn form-btn">Submit</button>
+            <button type="submit" class="btn form-btn clear-form">Clear Form</button>
         </div>
     </form>
 </div>

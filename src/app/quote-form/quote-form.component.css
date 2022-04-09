@@ -1,4 +1,37 @@
+.row{
+    padding: 1vh;
+}
+
+.form-heading{
+    text-align: center;
+    font-family: 'Rubik Wet Paint', cursive;
+}
+
+.form-labels{
+    font-weight: bold;
+}
+
 .add-quote-form{
     width: 50%;
     margin: 5vh auto;
+    background-color: #DDDDDD;
+    padding: 1vh;
+}
+
+.quote-tag-form{
+    width: 70% ;
+    margin: 1vh auto;
+}
+
+.form-btn{
+    background-color: #06113C;
+    color: #DDDDDD;
+    font-weight: bold;
+    width: 20%;
+    margin: 1vh 2vh;
+}
+
+.clear-form{
+    background-color: #FF8C32;
+    color: #06113C;
 }
