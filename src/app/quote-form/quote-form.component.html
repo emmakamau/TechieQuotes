@@ -1,7 +1,7 @@
 <hr>
 <div class="add-quote-form">
     <h3 class="form-heading">Add Quote</h3>
-    <form (ngSubmit)='submitQuote()' #goalForm='ngForm'>
+    <form #quoteForm='ngForm' (ngSubmit)='submitQuote(quoteForm)'>
         <div class="row">
             <div class="col-2"><label for="upLoadedBy" class="form-labels">Name</label></div>
             <div class="col-10">
@@ -34,7 +34,7 @@
         </div>
         <div class="text-center">
             <button type="submit" class="btn form-btn">Submit</button>
-            <button type="" class="btn form-btn clear-form">Reload</button>
+            <button type="" (click)="clearQuoteForm(quoteForm)" class="btn form-btn clear-form">Reload</button>
         </div>
     </form>
 </div>

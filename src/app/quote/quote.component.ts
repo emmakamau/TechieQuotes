@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Quote } from '../quote'
+import { QuoteFormComponent } from '../quote-form/quote-form.component';
 
 @Component({
   selector: 'app-quote',
@@ -30,6 +31,11 @@ export class QuoteComponent implements OnInit {
       quote.entryDate = new Date()
       this.quotes.push(quote)
     }
+
+    //Reset form
+    // clearQuoteForm(){
+    //   quoteForm.reset()
+    // }
 
     //Deletes the quote
     deleteQuote(isComplete, index){
