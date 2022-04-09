@@ -1,0 +1,17 @@
+.app-footer{
+    background-color: #DDDDDD;
+    padding: 2vh;
+    text-align: center;
+}
+
+.contact-name{
+    font-family: 'Rubik Wet Paint', cursive;
+}
+
+.copyright{
+    text-align: center;
+    padding: 1vh;
+    font-family: 'Reenie Beanie';
+    font-weight: bolder;
+    font-size: larger;
+}

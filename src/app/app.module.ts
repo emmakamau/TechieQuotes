@@ -10,6 +10,7 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DateCounterPipe } from './date-counter.pipe';
 import { QuoteHighlightDirective } from './quote-highlight.directive';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { QuoteHighlightDirective } from './quote-highlight.directive';
     NavbarComponent,
     DateCounterPipe,
     QuoteHighlightDirective,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
