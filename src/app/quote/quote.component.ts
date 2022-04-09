@@ -12,9 +12,9 @@ export class QuoteComponent implements OnInit {
     quotes:Quote[] = [
       new Quote(1,'Let us go invent tomorrow instead of worrying about what happened yesterday.Let us go invent tomorrow instead of worrying about what happened yesterday.','Steve Jobs','Emma','Inspire',new Date(2020,5,23),23,4),
       new Quote(1,'Never let a computer know you are in a hurry.','Author Unknown','Kamau','Humor',new Date(2021,4,21),6,7),
-      new Quote(1,'Let us go invent tomorrow instead of worrying about what happened yesterday.','Steve Jobs','Emma','Inspire',new Date(2020,5,23),23,4),
+      new Quote(1,'Let us go invent tomorrow instead of worrying about what happened yesterday.','Steve Jobs','Emma','Inspire',new Date(2020,5,23),21,4),
       new Quote(1,'Never let a computer know you are in a hurry.','Author Unknown','Kamau','Humor',new Date(2021,4,21),6,7),
-      new Quote(1,'Let us go invent tomorrow instead of worrying about what happened yesterday.','Steve Jobs','Emma','Inspire',new Date(2020,5,23),23,4),
+      new Quote(1,'Let us go invent tomorrow instead of worrying about what happened yesterday.','Steve Jobs','Emma','Inspire',new Date(2020,5,23),90,4),
       new Quote(1,'Never let a computer know you are in a hurry.','Author Unknown','Kamau','Humor',new Date(2021,4,21),6,7),
     ]
 
@@ -45,6 +45,10 @@ export class QuoteComponent implements OnInit {
       let downVoteQuote=this.quotes[index].downVote+1
       this.quotes[index].downVote = downVoteQuote
     }
+
+    //Get Quote with the highest upvotes in the Quote array
+    arr:number[] = this.quotes.map(quote => quote.upVote)
+    highest = Math.max(...this.arr)
 
   constructor() { }
   ngOnInit(): void {

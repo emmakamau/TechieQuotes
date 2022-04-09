@@ -2,31 +2,69 @@
 <app-navbar></app-navbar>
 
 <!-- Popular Quotes -->
-<div class=""><h1 class="main-heading">TechieQuotes</h1></div>
+<div class="">
+    <h1 class="main-heading">TechieQuotes</h1>
+</div>
 <div class="quote-display">
     <ul>
         <li *ngFor="let quote of quotes, let i = index">
-            <p class="quote-show">
-                <span><img src="./assets/Images/social-icons/double-quote-serif-left-xl.png" class="double-quote"></span>
+            <div *ngIf="quote.upVote == highest; then popular else other"></div>
+            <ng-template #popular>
+                <div appQuoteHighlight>
+                    <p class="quote-show">
+                        <span><img src="./assets/Images/social-icons/double-quote-serif-left-xl.png"
+                                class="double-quote"></span>
+                        {{quote.quote}}
+                        <span><img src="./assets/Images/social-icons/double-quote-serif-right-xl.png"
+                                class="double-quote"></span>
+                    </p>
+                    <p class="quote-author">Author, {{quote.author}}</p>
+                    <hr>
+                    <div class="row">
+                        <div class="col">
+                            <img src="./assets/Images/social-icons/thumbs-up.png" class="quote-vote" id="upVote"
+                                (click)="upVoteQuote(i)">
+                            <span class="quote-vote-value">{{quote.upVote}}</span>
+                        </div>
+                        <div class="col">
+                            <img src="./assets/Images/social-icons/thumbs-down.png" class="quote-vote" id="downVote"
+                                (click)="downVoteQuote(i)">
+                            <span class="quote-vote-value">{{quote.downVote}}</span>
+                        </div>
+                    </div>
+                    <p class="view-more" (click)='toggleDetails(i)'>View more</p>
+                    <div *ngIf='quote.showDescription'>
+                        <app-quote-detail [quote]="quote" (isComplete)='deleteQuote($event,i)'></app-quote-detail>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template #other>
+                <p class="quote-show">
+                    <span><img src="./assets/Images/social-icons/double-quote-serif-left-xl.png"
+                            class="double-quote"></span>
                     {{quote.quote}}
-                <span><img src="./assets/Images/social-icons/double-quote-serif-right-xl.png" class="double-quote"></span>
-            </p>
-            <p class="quote-author">Author, {{quote.author}}</p>
-            <hr>
-            <div class="row">
-                <div class="col">
-                    <img src="./assets/Images/social-icons/thumbs-up.png" class="quote-vote" id="upVote" (click)="upVoteQuote(i)"> 
-                    <span class="quote-vote-value">{{quote.upVote}}</span>
+                    <span><img src="./assets/Images/social-icons/double-quote-serif-right-xl.png"
+                            class="double-quote"></span>
+                </p>
+                <p class="quote-author">Author, {{quote.author}}</p>
+                <hr>
+                <div class="row">
+                    <div class="col">
+                        <img src="./assets/Images/social-icons/thumbs-up.png" class="quote-vote" id="upVote"
+                            (click)="upVoteQuote(i)">
+                        <span class="quote-vote-value">{{quote.upVote}}</span>
+                    </div>
+                    <div class="col">
+                        <img src="./assets/Images/social-icons/thumbs-down.png" class="quote-vote" id="downVote"
+                            (click)="downVoteQuote(i)">
+                        <span class="quote-vote-value">{{quote.downVote}}</span>
+                    </div>
                 </div>
-                <div class="col">
-                    <img src="./assets/Images/social-icons/thumbs-down.png" class="quote-vote" id="downVote" (click)="downVoteQuote(i)">
-                    <span class="quote-vote-value">{{quote.downVote}}</span>
+                <p class="view-more" (click)='toggleDetails(i)'>View more</p>
+                <div *ngIf='quote.showDescription'>
+                    <app-quote-detail [quote]="quote" (isComplete)='deleteQuote($event,i)'></app-quote-detail>
                 </div>
-            </div>
-            <p class="view-more" (click)='toggleDetails(i)'>View more</p>
-            <div *ngIf='quote.showDescription'>
-                <app-quote-detail [quote]="quote" (isComplete)='deleteQuote($event,i)'></app-quote-detail> 
-            </div>
+            </ng-template>
         </li>
     </ul>
 </div>
@@ -34,4 +72,3 @@
 <!-- Add Quote Form -->
 
 <!-- Footer -->
-
