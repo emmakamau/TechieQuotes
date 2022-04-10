@@ -3,7 +3,7 @@
     <div class="col"><p class="quote-moreinfo">Tag: {{quote.tag}}</p></div>
 </div>
 <div class="text-center">
-    <p>This quote is {{quote.entryDate|dateCounter}} days old.</p>
+    <p class="days-old">This quote is {{quote.entryDate|dateCounter}} days old.</p>
 </div>
 <div class="text-center">
     <button (click)= 'quoteDelete(true)' class="btn quote-del-btn">Delete Quote</button>
