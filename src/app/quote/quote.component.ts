@@ -28,8 +28,9 @@ export class QuoteComponent implements OnInit {
     addNewQuote(quote){
       let quoteLen = this.quotes.length;
       quote.id = quoteLen+1;
-      quote.entryDate = new Date()
-      this.quotes.push(quote)
+      let quoteObj=new Quote(quote.id,quote.quote,quote.author,quote.uploadedBy,quote.tag,new Date,0,0);
+     
+      this.quotes.push(quoteObj)
     }
 
     //Deletes the quote

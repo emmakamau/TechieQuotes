@@ -13,8 +13,9 @@ export class QuoteFormComponent implements OnInit {
   @Output() addQuote = new EventEmitter<Quote>();
 
   //Emit data to the parent component quote
-  submitQuote(){
+  submitQuote(quoteForm: NgForm){
     this.addQuote.emit(this.newQuote); 
+    quoteForm.reset()
       }
 
   //On click of btn the form data is cleared    

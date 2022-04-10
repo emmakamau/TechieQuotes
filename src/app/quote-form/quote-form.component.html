@@ -1,7 +1,7 @@
 <hr>
 <div class="add-quote-form">
     <h3 class="form-heading">Add Quote</h3>
-    <form #quoteForm='ngForm' (ngSubmit)='submitQuote()'> 
+    <form #quoteForm='ngForm' (ngSubmit)='submitQuote(quoteForm)'> 
         <div class="form-group">
             <div class="row">
                 <div class="col-2"><label for="upLoadedBy" class="form-labels">Name</label></div>
