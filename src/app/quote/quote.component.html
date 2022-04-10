@@ -1,5 +1,7 @@
 <!-- Navbar -->
-<app-navbar></app-navbar>
+<div id="home">
+    <app-navbar></app-navbar>
+</div>
 
 <!-- Quotes Display -->
 <div class="">
@@ -76,7 +78,11 @@
 </div>
 
 <!-- Add Quote Form -->
-<app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+<div id="quote-form">
+    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+</div>
 
 <!-- Footer -->
-<app-footer></app-footer>
+<div>
+    <app-footer></app-footer>
+</div>

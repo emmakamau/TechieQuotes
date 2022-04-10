@@ -4,8 +4,18 @@
     text-align: center;
 }
 
+.linkedin-link{
+    text-decoration: none;
+}
+
 .contact-name{
     font-family: 'Rubik Wet Paint', cursive;
+}
+
+.arrow-up{
+    height: 5vh;
+    width: 3vw;
+    float: right;
 }
 
 .copyright{

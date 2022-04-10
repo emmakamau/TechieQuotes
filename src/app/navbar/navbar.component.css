@@ -1,5 +1,6 @@
 .nav-bar-main{
     background-color: #06113C !important;
+    list-style:none;
 }
 
 .navbar{
@@ -12,7 +13,15 @@
     border: none;
 }
 
+.nav-btn-add{
+    background-color: #FF8C32;
+    font-weight: bolder;
+    float: right;
+    margin-right: 1vw;
+}
+
 .social-icons{
-    height: 4vh;
-    width: 2vw;
+    height: 6vh;
+    width: 4vw;
+    padding: 0.5vh;
 }
