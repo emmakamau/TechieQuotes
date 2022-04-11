@@ -3,6 +3,9 @@
 Find the best & inspiring tech quotes by the very best in the tech industry.
 [Click to view](emmakamau.github.io/techiequotes/)
 
+https://user-images.githubusercontent.com/42608367/162663528-b6001bcc-3954-4030-b6c5-f699df1a3a28.mp4
+
+
 ## Contributor
 
 Emmaculate Kamau
